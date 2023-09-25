@@ -1,0 +1,52 @@
+.header-barranavegacion{
+    background-color: rgb(72, 70, 70);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-navegacion{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links-navegacion{
+    display: flex;
+    align-items: center;
+    width: 65%;
+    justify-content: space-evenly;
+    font-weight: 500;
+}
+.img-header{
+    width: 100%;
+    filter: brightness(40%);
+}
+.img-text{
+    color: white;
+    position: absolute;
+    text-align: right;
+    right: 100px;
+    bottom: 100px;
+    display: inline-block;
+}
+.boton1{
+    background-color: transparent;
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+    border-style: ridge;
+    border-color: white;
+    border-width: 2px;
+}
+.boton2{
+    background-color:rgb(70, 189, 78);
+    padding: 8px;
+    color: white;
+    border-radius: 6px;
+    border-style: none;
+}
+
+/*body*/
+.operadores-padre{
+    background-color: white;
+}
