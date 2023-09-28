@@ -17,6 +17,9 @@
     justify-content: space-evenly;
     font-weight: 500;
 }
+.header-imagen{
+    position: relative;
+}
 .img-header{
     width: 100%;
     filter: brightness(40%);
@@ -25,9 +28,9 @@
     color: white;
     position: absolute;
     text-align: right;
-    right: 100px;
     bottom: 100px;
-    display: inline-block;
+    right: 80px;
+    width: 70%;
 }
 .boton1{
     background-color: transparent;
@@ -47,6 +50,35 @@
 }
 
 /*body*/
-.operadores-padre{
+.oradores-padre{
     background-color: white;
+    padding: 10px 70px;
+}
+.oradores-titulos{
+    text-align: center;
+    padding: 25px 0px;
+}
+.oradores-img{
+    width: 100%;
+}
+.oradores-items{
+    border: 1px;
+}
+.oradores-row{
+    --bs-gutter-x: 0.2rem;
+}
+.p{
+    font-size: 11px;
+    margin: 4px;
+}
+/*FOOTER*/
+.links-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(67, 97, 139);
+    color: white;
+    height: 60px;
+    width: 100%;
+    font-weight: 500;
 }
