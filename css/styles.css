@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+/*HEADER*/
 .header-barranavegacion{
     background-color: rgb(72, 70, 70);
     color: white;
@@ -17,20 +21,20 @@
     justify-content: space-evenly;
     font-weight: 500;
 }
-.header-imagen{
+/*BODY*/
+
+/*CARRUSEL*/
+
+.caja-padre{
     position: relative;
 }
-.img-header{
-    width: 100%;
-    filter: brightness(40%);
-}
-.img-text{
-    color: white;
+.caja-hijo{
     position: absolute;
     text-align: right;
-    bottom: 100px;
-    right: 80px;
-    width: 70%;
+    top: 15px;
+    right: 20px;
+    color: white;
+    font-size: 11px;
 }
 .boton1{
     background-color: transparent;
@@ -49,20 +53,27 @@
     border-style: none;
 }
 
-/*body*/
+/*CAJA ORADORES*/
 .oradores-padre{
     background-color: white;
-    padding: 10px 70px;
+    padding: 10px 80px;
 }
 .oradores-titulos{
     text-align: center;
     padding: 25px 0px;
+}
+.row{
+    --bs-gutter-x: 0;
 }
 .oradores-img{
     width: 100%;
 }
 .oradores-items{
     border: 1px;
+    border-style: solid;
+    border-color: rgb(181, 178, 178);
+    margin: 14px;
+    box-sizing: border-box;
 }
 .oradores-row{
     --bs-gutter-x: 0.2rem;
@@ -71,14 +82,58 @@
     font-size: 11px;
     margin: 4px;
 }
+/*FORMULARIO ORADORES*/
+.formulario{
+    background-color: white;
+    text-align: center;
+    padding: 25px 0px;
+}
+.row-formulario{
+    padding: 10px 40px;
+}
+.item-formulario{
+    padding: 0px 10px;
+}
 /*FOOTER*/
 .links-footer{
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(67, 97, 139);
+    background-color: rgb(39, 65, 101);
     color: white;
-    height: 60px;
     width: 100%;
     font-weight: 500;
+}
+li.nav-item{
+    padding: 0px 10px;
+}
+
+/*media query*/
+@media (min-width: 576px){
+    .caja-hijo{
+        font-size: 13px;
+        top: 50px;
+        right: 40px;
+    }
+}
+@media (min-width: 768px){
+    .caja-hijo{
+        font-size: 18px;
+        top: 150px;
+        right: 100px;
+    }
+    .p{
+        font-size: 14px;
+    }
+    .row-formulario{
+        padding: 10px 100px;
+    }
+}
+@media (min-width: 1100px){
+    .caja-hijo{
+        font-size: 20px;
+        top: 200px;
+        right: 100px;
+    }
+    .row-formulario{
+        padding: 10px 300px;
+    }
 }
